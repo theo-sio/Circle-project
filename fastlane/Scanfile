@@ -13,5 +13,5 @@
 # clean(true)
 
 # Enable skip_build to skip debug builds for faster test performance
-scheme("test-circle")
+scheme("test-Circle")
 device("iPhone 13 Pro")
