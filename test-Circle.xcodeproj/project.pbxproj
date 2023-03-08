@@ -13,7 +13,18 @@
 		E436846329B8E49500141ACB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E436846129B8E49500141ACB /* Main.storyboard */; };
 		E436846529B8E49600141ACB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E436846429B8E49600141ACB /* Assets.xcassets */; };
 		E436846829B8E49600141ACB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E436846629B8E49600141ACB /* LaunchScreen.storyboard */; };
+		E4FE9BAB29B8FED900DD923C /* test_CircleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4FE9BAA29B8FED900DD923C /* test_CircleTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E4FE9BAC29B8FED900DD923C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E436845029B8E49500141ACB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E436845729B8E49500141ACB;
+			remoteInfo = "test-Circle";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		E436845829B8E49500141ACB /* test-Circle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "test-Circle.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,10 +35,19 @@
 		E436846429B8E49600141ACB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E436846729B8E49600141ACB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E436846929B8E49600141ACB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E4FE9BA829B8FED900DD923C /* test-CircleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "test-CircleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4FE9BAA29B8FED900DD923C /* test_CircleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test_CircleTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		E436845529B8E49500141ACB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4FE9BA529B8FED900DD923C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				E436845A29B8E49500141ACB /* test-Circle */,
+				E4FE9BA929B8FED900DD923C /* test-CircleTests */,
 				E436845929B8E49500141ACB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				E436845829B8E49500141ACB /* test-Circle.app */,
+				E4FE9BA829B8FED900DD923C /* test-CircleTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -65,6 +87,14 @@
 				E436846929B8E49600141ACB /* Info.plist */,
 			);
 			path = "test-Circle";
+			sourceTree = "<group>";
+		};
+		E4FE9BA929B8FED900DD923C /* test-CircleTests */ = {
+			isa = PBXGroup;
+			children = (
+				E4FE9BAA29B8FED900DD923C /* test_CircleTests.swift */,
+			);
+			path = "test-CircleTests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,6 +117,24 @@
 			productReference = E436845829B8E49500141ACB /* test-Circle.app */;
 			productType = "com.apple.product-type.application";
 		};
+		E4FE9BA729B8FED900DD923C /* test-CircleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E4FE9BB029B8FED900DD923C /* Build configuration list for PBXNativeTarget "test-CircleTests" */;
+			buildPhases = (
+				E4FE9BA429B8FED900DD923C /* Sources */,
+				E4FE9BA529B8FED900DD923C /* Frameworks */,
+				E4FE9BA629B8FED900DD923C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E4FE9BAD29B8FED900DD923C /* PBXTargetDependency */,
+			);
+			name = "test-CircleTests";
+			productName = "test-CircleTests";
+			productReference = E4FE9BA829B8FED900DD923C /* test-CircleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -99,6 +147,10 @@
 				TargetAttributes = {
 					E436845729B8E49500141ACB = {
 						CreatedOnToolsVersion = 14.2;
+					};
+					E4FE9BA729B8FED900DD923C = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = E436845729B8E49500141ACB;
 					};
 				};
 			};
@@ -116,6 +168,7 @@
 			projectRoot = "";
 			targets = (
 				E436845729B8E49500141ACB /* test-Circle */,
+				E4FE9BA729B8FED900DD923C /* test-CircleTests */,
 			);
 		};
 /* End PBXProject section */
@@ -128,6 +181,13 @@
 				E436846829B8E49600141ACB /* LaunchScreen.storyboard in Resources */,
 				E436846529B8E49600141ACB /* Assets.xcassets in Resources */,
 				E436846329B8E49500141ACB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4FE9BA629B8FED900DD923C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,7 +204,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E4FE9BA429B8FED900DD923C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4FE9BAB29B8FED900DD923C /* test_CircleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E4FE9BAD29B8FED900DD923C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E436845729B8E49500141ACB /* test-Circle */;
+			targetProxy = E4FE9BAC29B8FED900DD923C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		E436846129B8E49500141ACB /* Main.storyboard */ = {
@@ -334,6 +410,40 @@
 			};
 			name = Release;
 		};
+		E4FE9BAE29B8FED900DD923C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.esgi.test-CircleTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/test-Circle.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/test-Circle";
+			};
+			name = Debug;
+		};
+		E4FE9BAF29B8FED900DD923C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.esgi.test-CircleTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/test-Circle.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/test-Circle";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -351,6 +461,15 @@
 			buildConfigurations = (
 				E436846D29B8E49600141ACB /* Debug */,
 				E436846E29B8E49600141ACB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E4FE9BB029B8FED900DD923C /* Build configuration list for PBXNativeTarget "test-CircleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4FE9BAE29B8FED900DD923C /* Debug */,
+				E4FE9BAF29B8FED900DD923C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
